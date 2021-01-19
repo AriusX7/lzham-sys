@@ -2,11 +2,7 @@
 # https://github.com/BurntSushi/ripgrep/blob/master/.github/workflows/ci.yml
 
 name: ci
-on:
-  pull_request:
-  push:
-    branches:
-    - main
+on: [pull_request, push]
 jobs:
   test:
     name: test
@@ -128,7 +124,7 @@ jobs:
         echo "cargo command is: ${{ env.CARGO }}"
         echo "target flag is: ${{ env.TARGET_FLAGS }}"
     - name: Build sc_extract
-      run: ${{ env.CARGO }} build -vv --all ${{ env.TARGET_FLAGS }} --features generate_binding
+      run: ${{ env.CARGO }} build -vv --all ${{ env.TARGET_FLAGS }}
 
     - name: Run tests
       run: ${{ env.CARGO }} test -vv --all ${{ env.TARGET_FLAGS }}
