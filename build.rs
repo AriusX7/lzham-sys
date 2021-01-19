@@ -1,7 +1,7 @@
 use cmake::Config;
-use std::{env, process::Command, path::Path};
 #[cfg(feature = "generate_binding")]
 use std::path::PathBuf;
+use std::{env, path::Path, process::Command};
 
 #[cfg(feature = "generate_binding")]
 fn generate_bindings() {
@@ -108,11 +108,14 @@ fn main() {
             .spawn()
             .expect("msbuild command failed to start.");
 
-            let build_variable =
+        let build_variable =
             std::env::var("OUT_DIR").expect("Environment variable `OUT_DIR` is missing.");
-            let build_path = Path::new(&build_variable);
+        let build_path = Path::new(&build_variable);
 
-            println!("cargo:rustc-link-search=native={}/lib", build_path.display());
+        println!(
+            "cargo:rustc-link-search=native={}/lib",
+            build_path.display()
+        );
     }
 
     let linking_text = if is_static { "static" } else { "dylib" };
