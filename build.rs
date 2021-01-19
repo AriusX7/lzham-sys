@@ -1,5 +1,5 @@
 use cmake::Config;
-use std::env;
+use std::{env, process::Command, path::Path};
 #[cfg(feature = "generate_binding")]
 use std::path::PathBuf;
 
@@ -90,23 +90,30 @@ fn main() {
     #[cfg(feature = "generate_binding")]
     generate_bindings();
 
-    #[cfg(target_os = "macos")]
-    println!("cargo:rustc-link-lib=c++");
-
-    #[cfg(not(target_os = "macos"))]
-    println!("cargo:rustc-link-lib=stdc++");
-
     let is_static = is_static_build();
 
-    let dst = if is_static {
-        Config::new("lzham_codec")
-            .define("BUILD_SHARED_LIBS", "OFF")
-            .build()
-    } else {
-        cmake::build("lzham_codec")
-    };
+    if !cfg!(target_os = "windows") {
+        let dst = if is_static {
+            Config::new("lzham_codec")
+                .define("BUILD_SHARED_LIBS", "OFF")
+                .build()
+        } else {
+            cmake::build("lzham_codec")
+        };
 
-    println!("cargo:rustc-link-search=native={}/lib", dst.display());
+        println!("cargo:rustc-link-search=native={}/lib", dst.display());
+    } else {
+        Command::new("msbuild")
+            .arg("lzham_codec/lzham.sln")
+            .spawn()
+            .expect("msbuild command failed to start.");
+
+            let build_variable =
+            std::env::var("OUT_DIR").expect("Environment variable `OUT_DIR` is missing.");
+            let build_path = Path::new(&build_variable);
+
+            println!("cargo:rustc-link-search=native={}/lib", build_path.display());
+    }
 
     let linking_text = if is_static { "static" } else { "dylib" };
 

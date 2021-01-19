@@ -81,6 +81,9 @@ jobs:
       with:
         submodules: recursive
 
+    - name: Set up cache
+      uses: Swatinem/rust-cache@v1
+
     - name: Setup cmake
       uses: lukka/get-cmake@latest
 
