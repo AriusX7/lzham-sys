@@ -92,31 +92,18 @@ fn main() {
 
     let is_static = is_static_build();
 
-    if !cfg!(target_os = "windows") {
-        let dst = if is_static {
-            Config::new("lzham_codec")
-                .define("BUILD_SHARED_LIBS", "OFF")
-                .build()
-        } else {
-            cmake::build("lzham_codec")
-        };
-
-        println!("cargo:rustc-link-search=native={}/lib", dst.display());
-    } else {
-        Command::new("msbuild")
-            .arg("lzham_codec/lzham.sln")
-            .spawn()
-            .expect("msbuild command failed to start.");
-
-        let build_variable =
-            std::env::var("OUT_DIR").expect("Environment variable `OUT_DIR` is missing.");
-        let build_path = Path::new(&build_variable);
-
-        println!(
-            "cargo:rustc-link-search=native={}/lib",
-            build_path.display()
-        );
+    let target = env::var("TARGET").unwrap();
+    if target.contains("apple") {
+        println!("cargo:rustc-link-lib=dylib=c++");
+    } else if target.contains("linux") {
+        println!("cargo:rustc-link-lib=dylib=stdc++");
     }
+
+    let dst = Config::new("lzham_codec")
+        .define("BUILD_SHARED_LIBS", "OFF")
+        .build();
+
+    println!("cargo:rustc-link-search=native={}/lib", dst.display());
 
     let linking_text = if is_static { "static" } else { "dylib" };
 
