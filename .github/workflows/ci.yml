@@ -102,6 +102,10 @@ jobs:
     #   run: choco install -y llvm
     #   if: runner.os == 'Windows'
 
+    - name: Install Visual Studio 2010 (Windows)
+      if: runner.os == 'Windows'
+      run: choco install vcexpress2010
+
     - name: Add msbuild to PATH (Windows)
       uses: microsoft/setup-msbuild@v1.0.2
       with:
