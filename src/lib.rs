@@ -5,6 +5,7 @@
 #![allow(non_snake_case)]
 #![allow(improper_ctypes)]
 
+
 #[repr(C)]
 #[derive(Copy, Clone, Debug, Default, Eq, Hash, Ord, PartialEq, PartialOrd)]
 pub struct __BindgenBitfieldUnit<Storage, Align> {
@@ -115,9 +116,12 @@ pub const __MAC_10_13_4: u32 = 101304;
 pub const __MAC_10_14: u32 = 101400;
 pub const __MAC_10_14_1: u32 = 101401;
 pub const __MAC_10_14_4: u32 = 101404;
+pub const __MAC_10_14_6: u32 = 101406;
 pub const __MAC_10_15: u32 = 101500;
 pub const __MAC_10_15_1: u32 = 101501;
 pub const __MAC_10_15_4: u32 = 101504;
+pub const __MAC_10_16: u32 = 101600;
+pub const __MAC_11_0: u32 = 110000;
 pub const __IPHONE_2_0: u32 = 20000;
 pub const __IPHONE_2_1: u32 = 20100;
 pub const __IPHONE_2_2: u32 = 20200;
@@ -156,6 +160,7 @@ pub const __IPHONE_12_0: u32 = 120000;
 pub const __IPHONE_12_1: u32 = 120100;
 pub const __IPHONE_12_2: u32 = 120200;
 pub const __IPHONE_12_3: u32 = 120300;
+pub const __IPHONE_12_4: u32 = 120400;
 pub const __IPHONE_13_0: u32 = 130000;
 pub const __IPHONE_13_1: u32 = 130100;
 pub const __IPHONE_13_2: u32 = 130200;
@@ -163,6 +168,10 @@ pub const __IPHONE_13_3: u32 = 130300;
 pub const __IPHONE_13_4: u32 = 130400;
 pub const __IPHONE_13_5: u32 = 130500;
 pub const __IPHONE_13_6: u32 = 130600;
+pub const __IPHONE_13_7: u32 = 130700;
+pub const __IPHONE_14_0: u32 = 140000;
+pub const __IPHONE_14_1: u32 = 140100;
+pub const __IPHONE_14_2: u32 = 140200;
 pub const __TVOS_9_0: u32 = 90000;
 pub const __TVOS_9_1: u32 = 90100;
 pub const __TVOS_9_2: u32 = 90200;
@@ -179,10 +188,14 @@ pub const __TVOS_12_0: u32 = 120000;
 pub const __TVOS_12_1: u32 = 120100;
 pub const __TVOS_12_2: u32 = 120200;
 pub const __TVOS_12_3: u32 = 120300;
+pub const __TVOS_12_4: u32 = 120400;
 pub const __TVOS_13_0: u32 = 130000;
 pub const __TVOS_13_2: u32 = 130200;
 pub const __TVOS_13_3: u32 = 130300;
 pub const __TVOS_13_4: u32 = 130400;
+pub const __TVOS_14_0: u32 = 140000;
+pub const __TVOS_14_1: u32 = 140100;
+pub const __TVOS_14_2: u32 = 140200;
 pub const __WATCHOS_1_0: u32 = 10000;
 pub const __WATCHOS_2_0: u32 = 20000;
 pub const __WATCHOS_2_1: u32 = 20100;
@@ -198,15 +211,52 @@ pub const __WATCHOS_4_3: u32 = 40300;
 pub const __WATCHOS_5_0: u32 = 50000;
 pub const __WATCHOS_5_1: u32 = 50100;
 pub const __WATCHOS_5_2: u32 = 50200;
+pub const __WATCHOS_5_3: u32 = 50300;
 pub const __WATCHOS_6_0: u32 = 60000;
 pub const __WATCHOS_6_1: u32 = 60100;
 pub const __WATCHOS_6_2: u32 = 60200;
+pub const __WATCHOS_7_0: u32 = 70000;
+pub const __WATCHOS_7_1: u32 = 70100;
+pub const MAC_OS_X_VERSION_10_0: u32 = 1000;
+pub const MAC_OS_X_VERSION_10_1: u32 = 1010;
+pub const MAC_OS_X_VERSION_10_2: u32 = 1020;
+pub const MAC_OS_X_VERSION_10_3: u32 = 1030;
+pub const MAC_OS_X_VERSION_10_4: u32 = 1040;
+pub const MAC_OS_X_VERSION_10_5: u32 = 1050;
+pub const MAC_OS_X_VERSION_10_6: u32 = 1060;
+pub const MAC_OS_X_VERSION_10_7: u32 = 1070;
+pub const MAC_OS_X_VERSION_10_8: u32 = 1080;
+pub const MAC_OS_X_VERSION_10_9: u32 = 1090;
+pub const MAC_OS_X_VERSION_10_10: u32 = 101000;
+pub const MAC_OS_X_VERSION_10_10_2: u32 = 101002;
+pub const MAC_OS_X_VERSION_10_10_3: u32 = 101003;
+pub const MAC_OS_X_VERSION_10_11: u32 = 101100;
+pub const MAC_OS_X_VERSION_10_11_2: u32 = 101102;
+pub const MAC_OS_X_VERSION_10_11_3: u32 = 101103;
+pub const MAC_OS_X_VERSION_10_11_4: u32 = 101104;
+pub const MAC_OS_X_VERSION_10_12: u32 = 101200;
+pub const MAC_OS_X_VERSION_10_12_1: u32 = 101201;
+pub const MAC_OS_X_VERSION_10_12_2: u32 = 101202;
+pub const MAC_OS_X_VERSION_10_12_4: u32 = 101204;
+pub const MAC_OS_X_VERSION_10_13: u32 = 101300;
+pub const MAC_OS_X_VERSION_10_13_1: u32 = 101301;
+pub const MAC_OS_X_VERSION_10_13_2: u32 = 101302;
+pub const MAC_OS_X_VERSION_10_13_4: u32 = 101304;
+pub const MAC_OS_X_VERSION_10_14: u32 = 101400;
+pub const MAC_OS_X_VERSION_10_14_1: u32 = 101401;
+pub const MAC_OS_X_VERSION_10_14_4: u32 = 101404;
+pub const MAC_OS_X_VERSION_10_14_6: u32 = 101406;
+pub const MAC_OS_X_VERSION_10_15: u32 = 101500;
+pub const MAC_OS_X_VERSION_10_15_1: u32 = 101501;
+pub const MAC_OS_X_VERSION_10_16: u32 = 101600;
+pub const MAC_OS_VERSION_11_0: u32 = 110000;
 pub const __DRIVERKIT_19_0: u32 = 190000;
-pub const __MAC_OS_X_VERSION_MAX_ALLOWED: u32 = 101500;
+pub const __DRIVERKIT_20_0: u32 = 200000;
+pub const __MAC_OS_X_VERSION_MAX_ALLOWED: u32 = 110000;
 pub const __ENABLE_LEGACY_MAC_AVAILABILITY: u32 = 1;
 pub const __DARWIN_ONLY_64_BIT_INO_T: u32 = 0;
-pub const __DARWIN_ONLY_VERS_1050: u32 = 0;
 pub const __DARWIN_ONLY_UNIX_CONFORMANCE: u32 = 1;
+pub const __DARWIN_ONLY_VERS_1050: u32 = 0;
 pub const __DARWIN_UNIX03: u32 = 1;
 pub const __DARWIN_64_BIT_INO_T: u32 = 1;
 pub const __DARWIN_VERS_1050: u32 = 1;
@@ -276,6 +326,9 @@ pub const FP_RND_DOWN: u32 = 1;
 pub const FP_RND_UP: u32 = 2;
 pub const FP_CHOP: u32 = 3;
 pub const FP_STATE_BYTES: u32 = 512;
+pub const _X86_INSTRUCTION_STATE_MAX_INSN_BYTES: u32 = 2380;
+pub const _X86_INSTRUCTION_STATE_CACHELINE_SIZE: u32 = 64;
+pub const __LASTBRANCH_MAX: u32 = 32;
 pub const SIGEV_NONE: u32 = 0;
 pub const SIGEV_SIGNAL: u32 = 1;
 pub const SIGEV_THREAD: u32 = 3;
@@ -409,7 +462,9 @@ pub const RUSAGE_INFO_V1: u32 = 1;
 pub const RUSAGE_INFO_V2: u32 = 2;
 pub const RUSAGE_INFO_V3: u32 = 3;
 pub const RUSAGE_INFO_V4: u32 = 4;
-pub const RUSAGE_INFO_CURRENT: u32 = 4;
+pub const RUSAGE_INFO_V5: u32 = 5;
+pub const RUSAGE_INFO_CURRENT: u32 = 5;
+pub const RU_PROC_RUNS_RESLIDE: u32 = 1;
 pub const RLIMIT_CPU: u32 = 0;
 pub const RLIMIT_FSIZE: u32 = 1;
 pub const RLIMIT_DATA: u32 = 2;
@@ -437,6 +492,8 @@ pub const IOPOL_TYPE_DISK: u32 = 0;
 pub const IOPOL_TYPE_VFS_ATIME_UPDATES: u32 = 2;
 pub const IOPOL_TYPE_VFS_MATERIALIZE_DATALESS_FILES: u32 = 3;
 pub const IOPOL_TYPE_VFS_STATFS_NO_DATA_VOLUME: u32 = 4;
+pub const IOPOL_TYPE_VFS_TRIGGER_RESOLVE: u32 = 5;
+pub const IOPOL_TYPE_VFS_IGNORE_CONTENT_PROTECTION: u32 = 6;
 pub const IOPOL_SCOPE_PROCESS: u32 = 0;
 pub const IOPOL_SCOPE_THREAD: u32 = 1;
 pub const IOPOL_SCOPE_DARWIN_BG: u32 = 2;
@@ -455,6 +512,10 @@ pub const IOPOL_MATERIALIZE_DATALESS_FILES_OFF: u32 = 1;
 pub const IOPOL_MATERIALIZE_DATALESS_FILES_ON: u32 = 2;
 pub const IOPOL_VFS_STATFS_NO_DATA_VOLUME_DEFAULT: u32 = 0;
 pub const IOPOL_VFS_STATFS_FORCE_NO_DATA_VOLUME: u32 = 1;
+pub const IOPOL_VFS_TRIGGER_RESOLVE_DEFAULT: u32 = 0;
+pub const IOPOL_VFS_TRIGGER_RESOLVE_OFF: u32 = 1;
+pub const IOPOL_VFS_CONTENT_PROTECTION_DEFAULT: u32 = 0;
+pub const IOPOL_VFS_CONTENT_PROTECTION_IGNORE: u32 = 1;
 pub const WNOHANG: u32 = 1;
 pub const WUNTRACED: u32 = 2;
 pub const WCOREFLAG: u32 = 128;
@@ -3764,6 +3825,318 @@ fn bindgen_test_layout___darwin_x86_debug_state32() {
             stringify!(__dr7)
         )
     );
+}
+#[repr(C)]
+#[derive(Copy, Clone)]
+pub struct __x86_instruction_state {
+    pub __insn_stream_valid_bytes: ::std::os::raw::c_int,
+    pub __insn_offset: ::std::os::raw::c_int,
+    pub __out_of_synch: ::std::os::raw::c_int,
+    pub __insn_bytes: [__uint8_t; 2380usize],
+    pub __insn_cacheline: [__uint8_t; 64usize],
+}
+#[test]
+fn bindgen_test_layout___x86_instruction_state() {
+    assert_eq!(
+        ::std::mem::size_of::<__x86_instruction_state>(),
+        2456usize,
+        concat!("Size of: ", stringify!(__x86_instruction_state))
+    );
+    assert_eq!(
+        ::std::mem::align_of::<__x86_instruction_state>(),
+        4usize,
+        concat!("Alignment of ", stringify!(__x86_instruction_state))
+    );
+    assert_eq!(
+        unsafe {
+            &(*(::std::ptr::null::<__x86_instruction_state>())).__insn_stream_valid_bytes
+                as *const _ as usize
+        },
+        0usize,
+        concat!(
+            "Offset of field: ",
+            stringify!(__x86_instruction_state),
+            "::",
+            stringify!(__insn_stream_valid_bytes)
+        )
+    );
+    assert_eq!(
+        unsafe {
+            &(*(::std::ptr::null::<__x86_instruction_state>())).__insn_offset as *const _ as usize
+        },
+        4usize,
+        concat!(
+            "Offset of field: ",
+            stringify!(__x86_instruction_state),
+            "::",
+            stringify!(__insn_offset)
+        )
+    );
+    assert_eq!(
+        unsafe {
+            &(*(::std::ptr::null::<__x86_instruction_state>())).__out_of_synch as *const _ as usize
+        },
+        8usize,
+        concat!(
+            "Offset of field: ",
+            stringify!(__x86_instruction_state),
+            "::",
+            stringify!(__out_of_synch)
+        )
+    );
+    assert_eq!(
+        unsafe {
+            &(*(::std::ptr::null::<__x86_instruction_state>())).__insn_bytes as *const _ as usize
+        },
+        12usize,
+        concat!(
+            "Offset of field: ",
+            stringify!(__x86_instruction_state),
+            "::",
+            stringify!(__insn_bytes)
+        )
+    );
+    assert_eq!(
+        unsafe {
+            &(*(::std::ptr::null::<__x86_instruction_state>())).__insn_cacheline as *const _
+                as usize
+        },
+        2392usize,
+        concat!(
+            "Offset of field: ",
+            stringify!(__x86_instruction_state),
+            "::",
+            stringify!(__insn_cacheline)
+        )
+    );
+}
+#[repr(C)]
+#[derive(Debug, Copy, Clone)]
+pub struct __last_branch_record {
+    pub __from_ip: __uint64_t,
+    pub __to_ip: __uint64_t,
+    pub _bitfield_1: __BindgenBitfieldUnit<[u8; 4usize], u16>,
+    pub __bindgen_padding_0: u32,
+}
+#[test]
+fn bindgen_test_layout___last_branch_record() {
+    assert_eq!(
+        ::std::mem::size_of::<__last_branch_record>(),
+        24usize,
+        concat!("Size of: ", stringify!(__last_branch_record))
+    );
+    assert_eq!(
+        ::std::mem::align_of::<__last_branch_record>(),
+        8usize,
+        concat!("Alignment of ", stringify!(__last_branch_record))
+    );
+    assert_eq!(
+        unsafe { &(*(::std::ptr::null::<__last_branch_record>())).__from_ip as *const _ as usize },
+        0usize,
+        concat!(
+            "Offset of field: ",
+            stringify!(__last_branch_record),
+            "::",
+            stringify!(__from_ip)
+        )
+    );
+    assert_eq!(
+        unsafe { &(*(::std::ptr::null::<__last_branch_record>())).__to_ip as *const _ as usize },
+        8usize,
+        concat!(
+            "Offset of field: ",
+            stringify!(__last_branch_record),
+            "::",
+            stringify!(__to_ip)
+        )
+    );
+}
+impl __last_branch_record {
+    #[inline]
+    pub fn __mispredict(&self) -> __uint32_t {
+        unsafe { ::std::mem::transmute(self._bitfield_1.get(0usize, 1u8) as u32) }
+    }
+    #[inline]
+    pub fn set___mispredict(&mut self, val: __uint32_t) {
+        unsafe {
+            let val: u32 = ::std::mem::transmute(val);
+            self._bitfield_1.set(0usize, 1u8, val as u64)
+        }
+    }
+    #[inline]
+    pub fn __tsx_abort(&self) -> __uint32_t {
+        unsafe { ::std::mem::transmute(self._bitfield_1.get(1usize, 1u8) as u32) }
+    }
+    #[inline]
+    pub fn set___tsx_abort(&mut self, val: __uint32_t) {
+        unsafe {
+            let val: u32 = ::std::mem::transmute(val);
+            self._bitfield_1.set(1usize, 1u8, val as u64)
+        }
+    }
+    #[inline]
+    pub fn __in_tsx(&self) -> __uint32_t {
+        unsafe { ::std::mem::transmute(self._bitfield_1.get(2usize, 1u8) as u32) }
+    }
+    #[inline]
+    pub fn set___in_tsx(&mut self, val: __uint32_t) {
+        unsafe {
+            let val: u32 = ::std::mem::transmute(val);
+            self._bitfield_1.set(2usize, 1u8, val as u64)
+        }
+    }
+    #[inline]
+    pub fn __cycle_count(&self) -> __uint32_t {
+        unsafe { ::std::mem::transmute(self._bitfield_1.get(3usize, 16u8) as u32) }
+    }
+    #[inline]
+    pub fn set___cycle_count(&mut self, val: __uint32_t) {
+        unsafe {
+            let val: u32 = ::std::mem::transmute(val);
+            self._bitfield_1.set(3usize, 16u8, val as u64)
+        }
+    }
+    #[inline]
+    pub fn __reserved(&self) -> __uint32_t {
+        unsafe { ::std::mem::transmute(self._bitfield_1.get(19usize, 13u8) as u32) }
+    }
+    #[inline]
+    pub fn set___reserved(&mut self, val: __uint32_t) {
+        unsafe {
+            let val: u32 = ::std::mem::transmute(val);
+            self._bitfield_1.set(19usize, 13u8, val as u64)
+        }
+    }
+    #[inline]
+    pub fn new_bitfield_1(
+        __mispredict: __uint32_t,
+        __tsx_abort: __uint32_t,
+        __in_tsx: __uint32_t,
+        __cycle_count: __uint32_t,
+        __reserved: __uint32_t,
+    ) -> __BindgenBitfieldUnit<[u8; 4usize], u16> {
+        let mut __bindgen_bitfield_unit: __BindgenBitfieldUnit<[u8; 4usize], u16> =
+            Default::default();
+        __bindgen_bitfield_unit.set(0usize, 1u8, {
+            let __mispredict: u32 = unsafe { ::std::mem::transmute(__mispredict) };
+            __mispredict as u64
+        });
+        __bindgen_bitfield_unit.set(1usize, 1u8, {
+            let __tsx_abort: u32 = unsafe { ::std::mem::transmute(__tsx_abort) };
+            __tsx_abort as u64
+        });
+        __bindgen_bitfield_unit.set(2usize, 1u8, {
+            let __in_tsx: u32 = unsafe { ::std::mem::transmute(__in_tsx) };
+            __in_tsx as u64
+        });
+        __bindgen_bitfield_unit.set(3usize, 16u8, {
+            let __cycle_count: u32 = unsafe { ::std::mem::transmute(__cycle_count) };
+            __cycle_count as u64
+        });
+        __bindgen_bitfield_unit.set(19usize, 13u8, {
+            let __reserved: u32 = unsafe { ::std::mem::transmute(__reserved) };
+            __reserved as u64
+        });
+        __bindgen_bitfield_unit
+    }
+}
+#[repr(C)]
+#[derive(Debug, Copy, Clone)]
+pub struct __last_branch_state {
+    pub __lbr_count: ::std::os::raw::c_int,
+    pub _bitfield_1: __BindgenBitfieldUnit<[u8; 4usize], u32>,
+    pub __lbrs: [__last_branch_record; 32usize],
+}
+#[test]
+fn bindgen_test_layout___last_branch_state() {
+    assert_eq!(
+        ::std::mem::size_of::<__last_branch_state>(),
+        776usize,
+        concat!("Size of: ", stringify!(__last_branch_state))
+    );
+    assert_eq!(
+        ::std::mem::align_of::<__last_branch_state>(),
+        8usize,
+        concat!("Alignment of ", stringify!(__last_branch_state))
+    );
+    assert_eq!(
+        unsafe { &(*(::std::ptr::null::<__last_branch_state>())).__lbr_count as *const _ as usize },
+        0usize,
+        concat!(
+            "Offset of field: ",
+            stringify!(__last_branch_state),
+            "::",
+            stringify!(__lbr_count)
+        )
+    );
+    assert_eq!(
+        unsafe { &(*(::std::ptr::null::<__last_branch_state>())).__lbrs as *const _ as usize },
+        8usize,
+        concat!(
+            "Offset of field: ",
+            stringify!(__last_branch_state),
+            "::",
+            stringify!(__lbrs)
+        )
+    );
+}
+impl __last_branch_state {
+    #[inline]
+    pub fn __lbr_supported_tsx(&self) -> __uint32_t {
+        unsafe { ::std::mem::transmute(self._bitfield_1.get(0usize, 1u8) as u32) }
+    }
+    #[inline]
+    pub fn set___lbr_supported_tsx(&mut self, val: __uint32_t) {
+        unsafe {
+            let val: u32 = ::std::mem::transmute(val);
+            self._bitfield_1.set(0usize, 1u8, val as u64)
+        }
+    }
+    #[inline]
+    pub fn __lbr_supported_cycle_count(&self) -> __uint32_t {
+        unsafe { ::std::mem::transmute(self._bitfield_1.get(1usize, 1u8) as u32) }
+    }
+    #[inline]
+    pub fn set___lbr_supported_cycle_count(&mut self, val: __uint32_t) {
+        unsafe {
+            let val: u32 = ::std::mem::transmute(val);
+            self._bitfield_1.set(1usize, 1u8, val as u64)
+        }
+    }
+    #[inline]
+    pub fn __reserved(&self) -> __uint32_t {
+        unsafe { ::std::mem::transmute(self._bitfield_1.get(2usize, 30u8) as u32) }
+    }
+    #[inline]
+    pub fn set___reserved(&mut self, val: __uint32_t) {
+        unsafe {
+            let val: u32 = ::std::mem::transmute(val);
+            self._bitfield_1.set(2usize, 30u8, val as u64)
+        }
+    }
+    #[inline]
+    pub fn new_bitfield_1(
+        __lbr_supported_tsx: __uint32_t,
+        __lbr_supported_cycle_count: __uint32_t,
+        __reserved: __uint32_t,
+    ) -> __BindgenBitfieldUnit<[u8; 4usize], u32> {
+        let mut __bindgen_bitfield_unit: __BindgenBitfieldUnit<[u8; 4usize], u32> =
+            Default::default();
+        __bindgen_bitfield_unit.set(0usize, 1u8, {
+            let __lbr_supported_tsx: u32 = unsafe { ::std::mem::transmute(__lbr_supported_tsx) };
+            __lbr_supported_tsx as u64
+        });
+        __bindgen_bitfield_unit.set(1usize, 1u8, {
+            let __lbr_supported_cycle_count: u32 =
+                unsafe { ::std::mem::transmute(__lbr_supported_cycle_count) };
+            __lbr_supported_cycle_count as u64
+        });
+        __bindgen_bitfield_unit.set(2usize, 30u8, {
+            let __reserved: u32 = unsafe { ::std::mem::transmute(__reserved) };
+            __reserved as u64
+        });
+        __bindgen_bitfield_unit
+    }
 }
 #[repr(C)]
 #[derive(Debug, Copy, Clone)]
@@ -9826,7 +10199,487 @@ fn bindgen_test_layout_rusage_info_v4() {
         )
     );
 }
-pub type rusage_info_current = rusage_info_v4;
+#[repr(C)]
+#[derive(Debug, Copy, Clone)]
+pub struct rusage_info_v5 {
+    pub ri_uuid: [u8; 16usize],
+    pub ri_user_time: u64,
+    pub ri_system_time: u64,
+    pub ri_pkg_idle_wkups: u64,
+    pub ri_interrupt_wkups: u64,
+    pub ri_pageins: u64,
+    pub ri_wired_size: u64,
+    pub ri_resident_size: u64,
+    pub ri_phys_footprint: u64,
+    pub ri_proc_start_abstime: u64,
+    pub ri_proc_exit_abstime: u64,
+    pub ri_child_user_time: u64,
+    pub ri_child_system_time: u64,
+    pub ri_child_pkg_idle_wkups: u64,
+    pub ri_child_interrupt_wkups: u64,
+    pub ri_child_pageins: u64,
+    pub ri_child_elapsed_abstime: u64,
+    pub ri_diskio_bytesread: u64,
+    pub ri_diskio_byteswritten: u64,
+    pub ri_cpu_time_qos_default: u64,
+    pub ri_cpu_time_qos_maintenance: u64,
+    pub ri_cpu_time_qos_background: u64,
+    pub ri_cpu_time_qos_utility: u64,
+    pub ri_cpu_time_qos_legacy: u64,
+    pub ri_cpu_time_qos_user_initiated: u64,
+    pub ri_cpu_time_qos_user_interactive: u64,
+    pub ri_billed_system_time: u64,
+    pub ri_serviced_system_time: u64,
+    pub ri_logical_writes: u64,
+    pub ri_lifetime_max_phys_footprint: u64,
+    pub ri_instructions: u64,
+    pub ri_cycles: u64,
+    pub ri_billed_energy: u64,
+    pub ri_serviced_energy: u64,
+    pub ri_interval_max_phys_footprint: u64,
+    pub ri_runnable_time: u64,
+    pub ri_flags: u64,
+}
+#[test]
+fn bindgen_test_layout_rusage_info_v5() {
+    assert_eq!(
+        ::std::mem::size_of::<rusage_info_v5>(),
+        304usize,
+        concat!("Size of: ", stringify!(rusage_info_v5))
+    );
+    assert_eq!(
+        ::std::mem::align_of::<rusage_info_v5>(),
+        8usize,
+        concat!("Alignment of ", stringify!(rusage_info_v5))
+    );
+    assert_eq!(
+        unsafe { &(*(::std::ptr::null::<rusage_info_v5>())).ri_uuid as *const _ as usize },
+        0usize,
+        concat!(
+            "Offset of field: ",
+            stringify!(rusage_info_v5),
+            "::",
+            stringify!(ri_uuid)
+        )
+    );
+    assert_eq!(
+        unsafe { &(*(::std::ptr::null::<rusage_info_v5>())).ri_user_time as *const _ as usize },
+        16usize,
+        concat!(
+            "Offset of field: ",
+            stringify!(rusage_info_v5),
+            "::",
+            stringify!(ri_user_time)
+        )
+    );
+    assert_eq!(
+        unsafe { &(*(::std::ptr::null::<rusage_info_v5>())).ri_system_time as *const _ as usize },
+        24usize,
+        concat!(
+            "Offset of field: ",
+            stringify!(rusage_info_v5),
+            "::",
+            stringify!(ri_system_time)
+        )
+    );
+    assert_eq!(
+        unsafe {
+            &(*(::std::ptr::null::<rusage_info_v5>())).ri_pkg_idle_wkups as *const _ as usize
+        },
+        32usize,
+        concat!(
+            "Offset of field: ",
+            stringify!(rusage_info_v5),
+            "::",
+            stringify!(ri_pkg_idle_wkups)
+        )
+    );
+    assert_eq!(
+        unsafe {
+            &(*(::std::ptr::null::<rusage_info_v5>())).ri_interrupt_wkups as *const _ as usize
+        },
+        40usize,
+        concat!(
+            "Offset of field: ",
+            stringify!(rusage_info_v5),
+            "::",
+            stringify!(ri_interrupt_wkups)
+        )
+    );
+    assert_eq!(
+        unsafe { &(*(::std::ptr::null::<rusage_info_v5>())).ri_pageins as *const _ as usize },
+        48usize,
+        concat!(
+            "Offset of field: ",
+            stringify!(rusage_info_v5),
+            "::",
+            stringify!(ri_pageins)
+        )
+    );
+    assert_eq!(
+        unsafe { &(*(::std::ptr::null::<rusage_info_v5>())).ri_wired_size as *const _ as usize },
+        56usize,
+        concat!(
+            "Offset of field: ",
+            stringify!(rusage_info_v5),
+            "::",
+            stringify!(ri_wired_size)
+        )
+    );
+    assert_eq!(
+        unsafe { &(*(::std::ptr::null::<rusage_info_v5>())).ri_resident_size as *const _ as usize },
+        64usize,
+        concat!(
+            "Offset of field: ",
+            stringify!(rusage_info_v5),
+            "::",
+            stringify!(ri_resident_size)
+        )
+    );
+    assert_eq!(
+        unsafe {
+            &(*(::std::ptr::null::<rusage_info_v5>())).ri_phys_footprint as *const _ as usize
+        },
+        72usize,
+        concat!(
+            "Offset of field: ",
+            stringify!(rusage_info_v5),
+            "::",
+            stringify!(ri_phys_footprint)
+        )
+    );
+    assert_eq!(
+        unsafe {
+            &(*(::std::ptr::null::<rusage_info_v5>())).ri_proc_start_abstime as *const _ as usize
+        },
+        80usize,
+        concat!(
+            "Offset of field: ",
+            stringify!(rusage_info_v5),
+            "::",
+            stringify!(ri_proc_start_abstime)
+        )
+    );
+    assert_eq!(
+        unsafe {
+            &(*(::std::ptr::null::<rusage_info_v5>())).ri_proc_exit_abstime as *const _ as usize
+        },
+        88usize,
+        concat!(
+            "Offset of field: ",
+            stringify!(rusage_info_v5),
+            "::",
+            stringify!(ri_proc_exit_abstime)
+        )
+    );
+    assert_eq!(
+        unsafe {
+            &(*(::std::ptr::null::<rusage_info_v5>())).ri_child_user_time as *const _ as usize
+        },
+        96usize,
+        concat!(
+            "Offset of field: ",
+            stringify!(rusage_info_v5),
+            "::",
+            stringify!(ri_child_user_time)
+        )
+    );
+    assert_eq!(
+        unsafe {
+            &(*(::std::ptr::null::<rusage_info_v5>())).ri_child_system_time as *const _ as usize
+        },
+        104usize,
+        concat!(
+            "Offset of field: ",
+            stringify!(rusage_info_v5),
+            "::",
+            stringify!(ri_child_system_time)
+        )
+    );
+    assert_eq!(
+        unsafe {
+            &(*(::std::ptr::null::<rusage_info_v5>())).ri_child_pkg_idle_wkups as *const _ as usize
+        },
+        112usize,
+        concat!(
+            "Offset of field: ",
+            stringify!(rusage_info_v5),
+            "::",
+            stringify!(ri_child_pkg_idle_wkups)
+        )
+    );
+    assert_eq!(
+        unsafe {
+            &(*(::std::ptr::null::<rusage_info_v5>())).ri_child_interrupt_wkups as *const _ as usize
+        },
+        120usize,
+        concat!(
+            "Offset of field: ",
+            stringify!(rusage_info_v5),
+            "::",
+            stringify!(ri_child_interrupt_wkups)
+        )
+    );
+    assert_eq!(
+        unsafe { &(*(::std::ptr::null::<rusage_info_v5>())).ri_child_pageins as *const _ as usize },
+        128usize,
+        concat!(
+            "Offset of field: ",
+            stringify!(rusage_info_v5),
+            "::",
+            stringify!(ri_child_pageins)
+        )
+    );
+    assert_eq!(
+        unsafe {
+            &(*(::std::ptr::null::<rusage_info_v5>())).ri_child_elapsed_abstime as *const _ as usize
+        },
+        136usize,
+        concat!(
+            "Offset of field: ",
+            stringify!(rusage_info_v5),
+            "::",
+            stringify!(ri_child_elapsed_abstime)
+        )
+    );
+    assert_eq!(
+        unsafe {
+            &(*(::std::ptr::null::<rusage_info_v5>())).ri_diskio_bytesread as *const _ as usize
+        },
+        144usize,
+        concat!(
+            "Offset of field: ",
+            stringify!(rusage_info_v5),
+            "::",
+            stringify!(ri_diskio_bytesread)
+        )
+    );
+    assert_eq!(
+        unsafe {
+            &(*(::std::ptr::null::<rusage_info_v5>())).ri_diskio_byteswritten as *const _ as usize
+        },
+        152usize,
+        concat!(
+            "Offset of field: ",
+            stringify!(rusage_info_v5),
+            "::",
+            stringify!(ri_diskio_byteswritten)
+        )
+    );
+    assert_eq!(
+        unsafe {
+            &(*(::std::ptr::null::<rusage_info_v5>())).ri_cpu_time_qos_default as *const _ as usize
+        },
+        160usize,
+        concat!(
+            "Offset of field: ",
+            stringify!(rusage_info_v5),
+            "::",
+            stringify!(ri_cpu_time_qos_default)
+        )
+    );
+    assert_eq!(
+        unsafe {
+            &(*(::std::ptr::null::<rusage_info_v5>())).ri_cpu_time_qos_maintenance as *const _
+                as usize
+        },
+        168usize,
+        concat!(
+            "Offset of field: ",
+            stringify!(rusage_info_v5),
+            "::",
+            stringify!(ri_cpu_time_qos_maintenance)
+        )
+    );
+    assert_eq!(
+        unsafe {
+            &(*(::std::ptr::null::<rusage_info_v5>())).ri_cpu_time_qos_background as *const _
+                as usize
+        },
+        176usize,
+        concat!(
+            "Offset of field: ",
+            stringify!(rusage_info_v5),
+            "::",
+            stringify!(ri_cpu_time_qos_background)
+        )
+    );
+    assert_eq!(
+        unsafe {
+            &(*(::std::ptr::null::<rusage_info_v5>())).ri_cpu_time_qos_utility as *const _ as usize
+        },
+        184usize,
+        concat!(
+            "Offset of field: ",
+            stringify!(rusage_info_v5),
+            "::",
+            stringify!(ri_cpu_time_qos_utility)
+        )
+    );
+    assert_eq!(
+        unsafe {
+            &(*(::std::ptr::null::<rusage_info_v5>())).ri_cpu_time_qos_legacy as *const _ as usize
+        },
+        192usize,
+        concat!(
+            "Offset of field: ",
+            stringify!(rusage_info_v5),
+            "::",
+            stringify!(ri_cpu_time_qos_legacy)
+        )
+    );
+    assert_eq!(
+        unsafe {
+            &(*(::std::ptr::null::<rusage_info_v5>())).ri_cpu_time_qos_user_initiated as *const _
+                as usize
+        },
+        200usize,
+        concat!(
+            "Offset of field: ",
+            stringify!(rusage_info_v5),
+            "::",
+            stringify!(ri_cpu_time_qos_user_initiated)
+        )
+    );
+    assert_eq!(
+        unsafe {
+            &(*(::std::ptr::null::<rusage_info_v5>())).ri_cpu_time_qos_user_interactive as *const _
+                as usize
+        },
+        208usize,
+        concat!(
+            "Offset of field: ",
+            stringify!(rusage_info_v5),
+            "::",
+            stringify!(ri_cpu_time_qos_user_interactive)
+        )
+    );
+    assert_eq!(
+        unsafe {
+            &(*(::std::ptr::null::<rusage_info_v5>())).ri_billed_system_time as *const _ as usize
+        },
+        216usize,
+        concat!(
+            "Offset of field: ",
+            stringify!(rusage_info_v5),
+            "::",
+            stringify!(ri_billed_system_time)
+        )
+    );
+    assert_eq!(
+        unsafe {
+            &(*(::std::ptr::null::<rusage_info_v5>())).ri_serviced_system_time as *const _ as usize
+        },
+        224usize,
+        concat!(
+            "Offset of field: ",
+            stringify!(rusage_info_v5),
+            "::",
+            stringify!(ri_serviced_system_time)
+        )
+    );
+    assert_eq!(
+        unsafe {
+            &(*(::std::ptr::null::<rusage_info_v5>())).ri_logical_writes as *const _ as usize
+        },
+        232usize,
+        concat!(
+            "Offset of field: ",
+            stringify!(rusage_info_v5),
+            "::",
+            stringify!(ri_logical_writes)
+        )
+    );
+    assert_eq!(
+        unsafe {
+            &(*(::std::ptr::null::<rusage_info_v5>())).ri_lifetime_max_phys_footprint as *const _
+                as usize
+        },
+        240usize,
+        concat!(
+            "Offset of field: ",
+            stringify!(rusage_info_v5),
+            "::",
+            stringify!(ri_lifetime_max_phys_footprint)
+        )
+    );
+    assert_eq!(
+        unsafe { &(*(::std::ptr::null::<rusage_info_v5>())).ri_instructions as *const _ as usize },
+        248usize,
+        concat!(
+            "Offset of field: ",
+            stringify!(rusage_info_v5),
+            "::",
+            stringify!(ri_instructions)
+        )
+    );
+    assert_eq!(
+        unsafe { &(*(::std::ptr::null::<rusage_info_v5>())).ri_cycles as *const _ as usize },
+        256usize,
+        concat!(
+            "Offset of field: ",
+            stringify!(rusage_info_v5),
+            "::",
+            stringify!(ri_cycles)
+        )
+    );
+    assert_eq!(
+        unsafe { &(*(::std::ptr::null::<rusage_info_v5>())).ri_billed_energy as *const _ as usize },
+        264usize,
+        concat!(
+            "Offset of field: ",
+            stringify!(rusage_info_v5),
+            "::",
+            stringify!(ri_billed_energy)
+        )
+    );
+    assert_eq!(
+        unsafe {
+            &(*(::std::ptr::null::<rusage_info_v5>())).ri_serviced_energy as *const _ as usize
+        },
+        272usize,
+        concat!(
+            "Offset of field: ",
+            stringify!(rusage_info_v5),
+            "::",
+            stringify!(ri_serviced_energy)
+        )
+    );
+    assert_eq!(
+        unsafe {
+            &(*(::std::ptr::null::<rusage_info_v5>())).ri_interval_max_phys_footprint as *const _
+                as usize
+        },
+        280usize,
+        concat!(
+            "Offset of field: ",
+            stringify!(rusage_info_v5),
+            "::",
+            stringify!(ri_interval_max_phys_footprint)
+        )
+    );
+    assert_eq!(
+        unsafe { &(*(::std::ptr::null::<rusage_info_v5>())).ri_runnable_time as *const _ as usize },
+        288usize,
+        concat!(
+            "Offset of field: ",
+            stringify!(rusage_info_v5),
+            "::",
+            stringify!(ri_runnable_time)
+        )
+    );
+    assert_eq!(
+        unsafe { &(*(::std::ptr::null::<rusage_info_v5>())).ri_flags as *const _ as usize },
+        296usize,
+        concat!(
+            "Offset of field: ",
+            stringify!(rusage_info_v5),
+            "::",
+            stringify!(ri_flags)
+        )
+    );
+}
+pub type rusage_info_current = rusage_info_v5;
 #[repr(C)]
 #[derive(Debug, Copy, Clone)]
 pub struct rlimit {
@@ -10876,6 +11729,14 @@ extern "C" {
         __ptr: *mut ::std::os::raw::c_void,
         __size: size_t,
     ) -> *mut ::std::os::raw::c_void;
+}
+extern "C" {
+    pub fn strtonum(
+        __numstr: *const ::std::os::raw::c_char,
+        __minval: ::std::os::raw::c_longlong,
+        __maxval: ::std::os::raw::c_longlong,
+        __errstrp: *mut *const ::std::os::raw::c_char,
+    ) -> ::std::os::raw::c_longlong;
 }
 extern "C" {
     pub fn strtoq(
